@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BuzzBox Controller</title>
+</head>
+<body>
+    <div class="topnav">
+        <h1>BuzzBox Controller</h1>
+    </div>
+    <div class="content">
+        <div class="card-grid">
+            <div class="card">
+                <h2>Connect to BuzzBox</h2>
+                <p>
+                    <button id="connectBleButton" class="connectButton">Connect</button>
+                    <button id="disconnectBleButton" class="disconnectButton">Disconnect</button>
+                </p>
+                <p class="gray-label">Connection State: <strong><span id="bleState" style="color:#d13a30;">Disconnected</span></strong></p>
+            </div>
+        </div>
+        <div class="card-grid">
+            <div class="card">       
+                <h2>Buzzer Control</h2>
+                <button id="buzzerControlButton" class="toggleButton">Activate Current Buzzer Mode</button>
+                <p class="gray-label">Buzzer Active: <strong><span id="buzzerState" style="color:#d13a30;">Inactive</span></strong></p>
+                <h2>Current Buzzer Mode</h2>
+                <p><span id="modeState">Invalid Mode</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Created by Victoria Geiger</p>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
