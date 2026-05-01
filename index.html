@@ -27,8 +27,23 @@
                 <h2>Buzzer Control</h2>
                 <button id="buzzerControlButton" class="toggleButton">Activate Current Buzzer Mode</button>
                 <p class="gray-label">Buzzer Active: <strong><span id="buzzerState" style="color:#d13a30;">Inactive</span></strong></p>
-                <h2>Current Buzzer Mode</h2>
-                <p><span id="modeState">Invalid Mode</span></p>
+                
+            </div>
+            <div class="card">
+                <h2>Select Mode or Select On Box</h2>
+                <button id="selectMode1" class="modeSelectButton">Manual</button>
+                <button id="selectMode2" class="modeSelectButton">Pulse</button>
+                <button id="selectMode3" class="modeSelectButton">Pattern</button>
+                <p>Current Buzzer Mode</p>
+                <p><strong><span id="modeState" style="color:#0011ff;">Manual</span></p>
+            </div>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <h2>Select a Pattern</h2>
+                <button id="selectPattern1" class="patternSelectButton">Double Pulse</button>
+                <p>Current Pattern</p>
+                <p class="gray-label"><span id="patternState">Invalid Pattern</span></p>
             </div>
         </div>
     </div>
